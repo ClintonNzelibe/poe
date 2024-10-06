@@ -1,0 +1,332 @@
+*{
+	padding:0px;
+	margin:0px;
+	box-sizing:border-box;
+}
+	
+div{
+		border:1px solid black;
+		min-height:200px;
+	}
+	
+section{
+		
+		min-height:300px;
+		width:100%;
+		
+		}	
+
+header{
+	height:90px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color:rgb(30,0,30);
+	width:100%;
+	 
+
+	
+}
+
+.logo {
+  width: 10%; 
+  min-height:80px;
+  
+}
+
+.logo img {
+  width: 80%;
+  padding-left:20px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+ 
+}
+
+
+nav li {
+  margin-right: 20px;
+  justify-content:space-between;
+  padding-right:30px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+@media(max-width:900px) and (min-width:480px){
+	header{
+		flex-direction:column;
+		align-items:flex-start;
+		flex-wrap:wrap;
+	}
+
+  .logo{
+	 width:100px; 
+	 height:30px;
+	 padding-top:15px;
+  }
+  
+ nav{
+	flex-direction:column;
+	padding-top:30px;
+	padding-left:60px;
+	flex-wrap:wrap;
+}
+
+}  
+  
+  
+  @media (max-width: 480px) {
+  header {
+		flex-direction:column;
+		align-items:flex-start;
+		flex-wrap:wrap;
+  }
+  
+  .logo {
+    width: 60px;
+    height: 20px;
+	padding-right:10px;
+	padding-top:30px;
+  }
+  nav{
+	flex-direction:column;
+	padding-right:80px;
+	flex-wrap:wrap;
+}
+ 
+  nav li {
+    margin-right:-11px;
+    
+  }
+}
+
+#play {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+
+.watch{
+	object-fit:cover;
+	
+	height:100vh;
+	
+}
+.overlay {
+  position: absolute;
+  top: 90px;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+}
+.overlay h1, h3{
+	color:#fff
+}
+.overlay h1{
+	position:relative;bottom:180px;
+	font-size:48px;
+}
+.overlay h3{
+	position:relative;top:30px;
+	font-size:32px;
+}
+.overlay a{
+	position:relative;top:180px;
+	text-decoration:none;
+	color:#FF674D;
+	font-size:30px;
+}
+.overlay p{
+	color:#FF674D;
+	position:relative;top:90px;
+}
+#you{
+	width:5%;
+	height:10px;
+	position:relative;top:70px;
+}
+
+
+
+
+.rice{
+	display:flex;
+	border:0px solid yellow;
+	
+	
+	
+	
+}
+.cake{
+	border:none;
+	width:50%;
+	background-color:ghostwhite;
+	flex-wrap:wrap;
+	overflow:hidden;
+	
+	
+	
+	
+
+}
+.cake1{
+	justify-content:center;
+	align-items:center;
+	flex-wrap:wrap;
+	
+	
+	
+}
+.cake1 img{
+	width:210px;
+	height:180px;
+	border-radius:0px;
+	position:relative;left:20px;
+	top:40px;
+}
+.cake1 h2{
+	position:relative;left:350px;
+	bottom:130px;	
+}
+.dog{
+	border:none;
+	width:55%;
+	height:70px;
+	position:relative;left:250px;
+	bottom:80px;
+}
+	
+.dog p{
+	position:relative;top:30px;
+	padding:2px;
+	color:#000;
+	font-size:18px;
+}	
+.dog h5{
+	position:relative;top:9px;
+	left:110px;
+	padding:3px;
+	color:#FF674D;
+	font-size:20px;
+}	
+.cake2 {
+	display:flex;
+	justify-content:space-around;
+	flex-wrap:wrap;
+	
+}
+.tea{
+	border:none;
+	width:40%;
+	height:20px;
+}
+.tea2{
+	position:relative;top:50px;
+	right:10px;
+	
+}
+.tea1{
+	position:relative;top:20px;
+	left:5px;
+}
+.tea2 p{
+	
+	padding-left:2px;
+	position:relative;top:10px;
+	left:20px;
+	
+	color:#000;
+}
+.tea2 h4{
+	position:relative;left:40px;
+	padding-left:5px;
+	color:#FF674D;
+}
+.tea1 img{
+	width:100%;
+	height:200px;
+}
+  
+footer{
+	height:70px;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	background-color:rgb(30,0,30);
+	
+}
+footer h2{
+	color:#fff;
+	
+}
+nav ul li:hover {
+  background-color: #FF674D;
+}
+
+@media all and (max-width: 780px) {
+	 section {
+    flex-direction: row;
+  }
+.rice{
+	flex-direction:column;
+	
+}
+  .cake, .cake2{
+    margin: 20px;
+	width:100%
+  }
+
+  footer {
+    padding: 20px;
+  }
+
+
+
+
+} 
+  
+  @media (max-width: 480px) {
+ section {
+    flex-direction: column;
+	flex-wrap:wrap;
+  }
+
+  .cake1, .cake2 {
+    margin: 10px;
+	
+  }
+
+  .cake1 img, .cake2 tea1 img {
+    width: 30%;
+  }
+ .cake1 .dog{
+	position:relative;right:30px;  
+	  
+  }
+  .cake2{
+	 position:relative;bottom:30px; 
+	 height:inherit;
+	  
+  }
+ 
+   footer {
+    padding: 20px;
+  }
+}
+  
+  
+  
+  
